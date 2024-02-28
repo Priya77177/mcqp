@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIPLOMA ALL SEMESTER MCQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style type="text/css">
+     
+.quiz-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+
+        }
+        .disabled{
+            cursor: no-drop;
+    pointer-events: none;
+        }
+.question {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+
+        }
+ .option {
+            margin: 5px 0;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .option input[type="checkbox"] {
+            margin-right: 10px;
+
+        }
+
+        /* Style for the feedback messages */
+        .feedback {
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+
+        .correct {
+           background-color:green;        }
+        .incorrect {
+           background-color:red;
+        }
+
+        .option .feedback-symbol {
+            margin-left: 10px;
+
+        }
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightcoral;
+
+}
+
+}
+
+
+
+
+/* Additional styles for dark mode as needed */
+
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: default;
+    margin: 0;
+}
+/*navigation bar*/
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 150px;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.container{
+
+}
+ /* ... Your existing styles ... */
+
+    /* Add hover effect for facility cards */
+
+
+                                    /*facility*/
+   
+
+
+
+
+
+                         /* contact*/
+ /*.contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            
+
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="password"],
+        .contact-form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form input[type="password"]:focus,
+        .contact-form input[type="number"]:focus {
+           
+        }
+
+        .contact-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: gold ;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #007bff;
+        }
+       /* .dark-mode .contact-form input[type="text"],
+       .dark-mode .contact-form input[type="email"],
+        .dark-mode .contact-form input[type="password"],
+        .dark-mode .contact-form input[type="number"],
+        .dark-mode .contact-form input[type="tel"] {
+           
+        
+        } */
+        
+
+/*
+#nav_2 {
+    background: yellow;
+    position: fixed;
+    top: 50%;
+    right: 3px;
+    font-size: 40px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px 0px 0px 20px;
+}*/
+
+.social-icon{
+    font-size: 3rem;
+    margin: 10px;
+    
+}
+
+.h1{
+    text-align-last: center;
+}
+
+    </style>
+</head>
+<body>
+<img src="mcq.png" width="100%" height="250px">
+    <header class="bg-primary text-white py-4">
+        
+        <div class="container text-center">
+            <h1 class="display-4">DIPLOMA ALL SEMESTER MCQ</h1>
+         
+         <div class="dark-mode-icon"></div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="semester a .html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semester
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownClasses">
+                            <a class="dropdown-item" href="#"> Semester 1</a>
+                            <a class="dropdown-item" href="#">Semester 2</a>
+                            <a class="dropdown-item" href="#">Semester 3</a>
+                            <a class="dropdown-item" href="#">Semester 4</a>
+                            <a class="dropdown-item" href="semester.html">Semester 5</a>
+                            <a class="dropdown-item" href="#">Semester 6</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add content for other sections (home, about, contact, team, gallery) here -->
+   
+  <div class="h1">
+      <h1 style=" color: black; align-items: center; " >
+        
+        TRIGONOMETRY
+      </h1>
+  </div>
+  <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 1: The value of sin (45° + θ) – cos (45° – θ) is
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) 2 cosθ
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) 2 sinθ
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 1
+
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) 0
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 2: The value of tan 1° tan 2° tan 3° … tan 89° is
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) 0
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b) 1
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 1/2
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Not defined
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 3:  If α + β = π/4, then the value of (1 + tan α) (1 + tan β) is
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) 1
+
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b) 2
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) -2
+
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)   Not defined
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 4: If A lies in the second quadrant and 3 tan A + 4 = 0, then the value of (2 cot A – 5 cos A + sin A) is equal to
+
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) -53/10
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b) 23/10
+
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 37/10
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)  7/10
+
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 5: The value of sin 50° – sin 70° + sin 10° is equal to
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  1
+
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b) 0
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 1/2
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) 2
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+   <div class="quiz-container">
+        <div class="question">
+           Question 6:   If sin θ and cos θ are the roots of ax<sup>2</sup> – bx + c = 0, then the relation between a, b and c will be
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  a<sup>2</sup> + b <sup>2</sup> + 2ac = 0
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b)  a<sup>2</sup> - b<sup>2</sup> + 2ac = 0
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) a<sup>2</sup> + c<sup>2</sup> + 2ab = 0
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) a<sup>2</sup> - b <sup>2</sup> - 2ac = 0
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+   <!-- <div class="quiz-container">
+        <div class="question">
+            Question 7: Which of these is NOT an APK file’s component?
+ 
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Dalvik executable
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Native libraries
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Resources
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) None of the above
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 8: The .apk extension stands for which of these?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Application Program Kit
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Android Package
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c)  Application Package
+
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Android Proprietary Kit
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 9:  Which of these operating systems is used in the form of the Android sack’s base?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  XML
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Java
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  Windows
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d)  Linux
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 10:  Which of these do NOT constitute to be a part of the native libraries in Android?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) OpenGL
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Webkit
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) SQLite
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) Dalvik
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 11:  Which of these pieces of code that are used in the Android system is NOT open source?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a) Wifi driver
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Keypad driver
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)Power management
+ 
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Audio driver
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 12: Google purchased Android in which of these years?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) 2010
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  2008
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 2005 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) 2003
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 13: Which of these does NOT refer to a nickname of the Android version?
+
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)  Muffin
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Honeycomb
+
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Gingerbread
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Cupcake
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 14: The Open Handset Alliance was not allowed in which of the years?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)   2008
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b)  2007
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 2006
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) 2005
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 15: Which of these was the first-ever phone released that was able to run the Android OS?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) HTC Hero
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Motorola Droid
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) T-Mobile G1
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Google gPhone
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+     
+    <div class="quiz-container">
+        <div class="question">
+            Question 16: APK stands for -
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Android Phone Kit
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Android Page Kit
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Android Package Kit
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of the above
+
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 17: In the context of mobile communication what is the full form of LTE ?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Level Telecom Advanced
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Long Terminal Advanced
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Long Term Evolution
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Long Time Evolution
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 18: What is Mobile communication?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)   Allows to communicate from different locations without the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)   Allows to communicate from different locations with the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  Allows to communicate from same locations without the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)  Allows to communicate from same locations with the use of physical medium
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 19:  In which of the following countries, the first phone call was made?
+
+
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  New York
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Spain
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) India
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) France
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+</div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 20:  What does API stand for?
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a) Application Programming Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Android Programming Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Android Page Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Application Page Interface
+
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>-->
+</div>
+</div>
+   <br>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <script>
+
+       
+
+document.addEventListener('DOMContentLoaded', function() {
+    const quizContainers = document.querySelectorAll('.quiz-container');
+    quizContainers.forEach(container => {
+        const options = container.querySelectorAll('.option');
+        options.forEach(option => {
+            option.addEventListener('click', function() {
+                if (!this.classList.contains('disabled')) {
+                    const isCorrect = this.getAttribute('data-answer') === 'true';
+                    if (isCorrect) {
+                        this.classList.add('correct');
+                        const feedbackSymbol = document.createElement('span');
+                        feedbackSymbol.className = 'feedback-symbol';
+                        this.appendChild(feedbackSymbol);
+                    } else {
+                        this.classList.add('incorrect');
+                        const correctOption = container.querySelector('.option[data-answer="true"]');
+                        correctOption.classList.add('correct');
+                        const feedbackSymbol = document.createElement('span');
+                        feedbackSymbol.className = 'feedback-symbol';
+                        correctOption.appendChild(feedbackSymbol);
+                    }
+                    options.forEach(opt => {
+                        opt.classList.add('disabled');
+                    });
+                }
+            });
+        });
+    });
+});
+
+
+
+    </script>
+
+ <!--footer-->
+ <footer style="background-color: #2c3e50; color: white; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Connect with Us</h4>
+                <p>Follow us on social media to stay updated!</p>
+                <div>
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="https://www.youtube.com/@technoyoddhaeklavya" class="social-icon"><i class="fa-brands fa-youtube fa-bounce fa-2xs" style="color:125fe2;"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Contact with website developer</h4>
+                <h3> <a href="file:///C:/website/Portfolio/bootstrap.html">  Priya Ranjan Pandey </a></h3>
+               <p>Email:   
+               <a href="priyaranjanpandey572@gmail.com">priyaranjanpandey572@gmail.com</p></a>
+                <p>Phone: +91 7717735815</p>
+
+            </div>
+            
+    </div>
+</footer>
+<footer style="background-color: #333; color: white; padding: 20px 0;">
+    <div class="container text-center">
+        <p>&copy; 2023 DIPLOMA ALL SEMESTER MCQ. All rights reserved.</p>
+    </div>
+</footer>
+ 
+</body>
+</html>
